@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 6, ../sass/print.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 10, ../sass/print.scss */
+::-moz-selection {
+  background: #ff0000;
+  text-shadow: none;
+}
+
+/* line 14, ../sass/print.scss */
+::selection {
+  background: #ff0000;
+  text-shadow: none;
+}
+
+/*主标题文字颜色*/
+/* line 18, ../sass/screen.scss */
+.main-text-color {
+  color: red;
+}
+
+/* line 22, ../sass/screen.scss */
+.side-text-color {
+  color: #ff0b13;
+}
+/* line 24, ../sass/screen.scss */
+.side-text-color .left {
+  color: #091fff;
+}
+/* line 27, ../sass/screen.scss */
+.side-text-color .right {
+  color: #11c909;
+}
+
+/* line 33, ../sass/screen.scss */
+.color-me-bad {
+  color: #11c909;
+  color: rgba(17, 201, 9, 0.9);
+}
+
+/* line 39, ../sass/screen.scss */
+.nav a {
+  color: #ff0b13;
+}
+/* line 41, ../sass/screen.scss */
+.nav a:hover {
+  color: #11c909;
+}
+/* line 44, ../sass/screen.scss */
+.nav a:visited {
+  color: #091fff;
+}
+/* line 47, ../sass/screen.scss */
+.nav a:link {
+  color: #ff0b13;
+}
+
+/*
+=================================================
+啊标签定义样式
+=================================================
+*/
+/* line 58, ../sass/screen.scss */
+a {
+  color: #0000ff;
+}
+/* line 60, ../sass/screen.scss */
+a:hover, a:focus {
+  color: #007fff;
+}
+/* line 63, ../sass/screen.scss */
+a:visited, a:active {
+  color: #0000ff;
+}
+
+/*
+=================================================
+nav样式操作
+=================================================
+*/
+/* line 74, ../sass/screen.scss */
+.chapter-summary a {
+  display: block;
+  padding: .5em;
+  color: #000;
+  opacity: .7;
+  border: none;
+}
+/* line 80, ../sass/screen.scss */
+.chapter-summary a:hover {
+  opacity: 1;
+}
+/* line 83, ../sass/screen.scss */
+.chapter-summary a:visited {
+  opacity: .9;
+}
+/* line 86, ../sass/screen.scss */
+.chapter-summary a b {
+  display: block;
+}
+/* line 89, ../sass/screen.scss */
+.chapter-summary a span {
+  display: block;
+  font-size: .8em;
+}
+
+/*
+=================================================
+父级选择器
+=================================================
+*/
+/* line 104, ../sass/screen.scss */
+.main .content {
+  width: 70%;
+}
+/* line 107, ../sass/screen.scss */
+.content .main {
+  width: 100%;
+}
+/* line 112, ../sass/screen.scss */
+.two .content .main {
+  color: pink;
+}
+
+/*
+=================================================
+级联选择器
+=================================================
+*/
+/* line 125, ../sass/screen.scss */
+.selector-one.selector-two {
+  color: green;
+}
