@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, e:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 6, ../sass/print.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 10, ../sass/print.scss */
+::-moz-selection {
+  background: #ff0000;
+  text-shadow: none;
+}
+
+/* line 14, ../sass/print.scss */
+::selection {
+  background: #ff0000;
+  text-shadow: none;
+}
+
+/*主标题文字颜色*/
+/* line 20, ../sass/screen.scss */
+.main-text-color {
+  color: red;
+}
+
+/* line 24, ../sass/screen.scss */
+.side-text-color {
+  color: #ff0b13;
+}
+/* line 26, ../sass/screen.scss */
+.side-text-color .left {
+  color: #091fff;
+}
+/* line 29, ../sass/screen.scss */
+.side-text-color .right {
+  color: #11c909;
+}
+
+/* line 35, ../sass/screen.scss */
+.color-me-bad {
+  color: #11c909;
+  color: rgba(17, 201, 9, 0.9);
+}
+
+/* line 41, ../sass/screen.scss */
+.nav a {
+  color: #ff0b13;
+}
+/* line 43, ../sass/screen.scss */
+.nav a:hover {
+  color: #11c909;
+}
+/* line 46, ../sass/screen.scss */
+.nav a:visited {
+  color: #091fff;
+}
+/* line 49, ../sass/screen.scss */
+.nav a:link {
+  color: #ff0b13;
+}
+
+/*
+=================================================
+啊标签定义样式
+=================================================
+*/
+/* line 60, ../sass/screen.scss */
+a {
+  color: #0000ff;
+}
+/* line 62, ../sass/screen.scss */
+a:hover, a:focus {
+  color: #007fff;
+}
+/* line 65, ../sass/screen.scss */
+a:visited, a:active {
+  color: #0000ff;
+}
+
+/*
+=================================================
+nav样式操作
+=================================================
+*/
+/* line 76, ../sass/screen.scss */
+.chapter-summary a {
+  display: block;
+  padding: .5em;
+  color: #000;
+  opacity: .7;
+  border: none;
+}
+/* line 82, ../sass/screen.scss */
+.chapter-summary a:hover {
+  opacity: 1;
+}
+/* line 85, ../sass/screen.scss */
+.chapter-summary a:visited {
+  opacity: .9;
+}
+/* line 88, ../sass/screen.scss */
+.chapter-summary a b {
+  display: block;
+}
+/* line 91, ../sass/screen.scss */
+.chapter-summary a span {
+  display: block;
+  font-size: .8em;
+}
+
+/*
+=================================================
+父级选择器
+=================================================
+*/
+/* line 106, ../sass/screen.scss */
+.main .content {
+  width: 70%;
+}
+/* line 109, ../sass/screen.scss */
+.content .main {
+  width: 100%;
+}
+/* line 114, ../sass/screen.scss */
+.two .content .main {
+  color: pink;
+}
+
+/*
+=================================================
+级联选择器
+=================================================
+*/
+/* line 127, ../sass/screen.scss */
+.selector-one.selector-two {
+  color: green;
+}
+
+/*
+=================================================
+嵌套命名空间
+=================================================
+*/
+/* line 138, ../sass/screen.scss */
+.nesting {
+  border-top: 1p dashed #0000ff;
+  border-right: 1px dashed #000;
+  border-bottom: 1px dashed #ff0000;
+  border-left: 1px dashed #ffbf00;
+}
+
+/*
+=================================================
+使用@extend命令扩展现有代码
+=================================================
+*/
+/* line 154, ../sass/screen.scss */
+.box, .warning-box, .success-box, .info-box, .div1, .div2 {
+  padding: 2em;
+  color: #ffbf00;
+  width: 150px;
+  margin: 5px;
+}
+
+/* line 161, ../sass/screen.scss */
+.warning-box {
+  border: 2px dotted #ffff00;
+  background: #ddd;
+}
+
+/* line 166, ../sass/screen.scss */
+.success-box {
+  border: 2px dotted #007fff;
+  background: #ccc;
+}
+
+/* line 171, ../sass/screen.scss */
+.info-box {
+  border: 2px solid #00ffff;
+  background: #666;
+}
+
+/*
+=================================================
+使用@extend命令扩展现有代码
+=================================================
+*/
+/* line 185, ../sass/screen.scss */
+.box1, .warning-box1, .success-box1, .info-box1 {
+  padding: 2em;
+  color: #ffbf00;
+}
+
+/* line 190, ../sass/screen.scss */
+.warning-box1 {
+  border: 2px dotted #ffff00;
+  background: #ddd;
+}
+
+/* line 195, ../sass/screen.scss */
+.success-box1 {
+  border: 2px dotted #007fff;
+  background: #ccc;
+}
+
+/* line 200, ../sass/screen.scss */
+.info-box1 {
+  border: 2px solid #00ffff;
+  background: #666;
+}
+
+/*
+=================================================
+混合宏@mixin生成常用代码
+=================================================
+*/
+/* line 211, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 214, ../sass/screen.scss */
+div {
+  -webkit-box-sizing: one-that-works;
+  -moz-box-sizing: one-that-works;
+  box-sizing: one-that-works;
+}
+
+/*
+=================================================
+第四章  轻松玩转颜色
+=================================================
+*/
+/* line 225, ../sass/screen.scss */
+.div1 {
+  background-color: #eeeeee;
+  float: left;
+}
+
+/*
+=================================================
+变浅函数
+=================================================
+*/
+/* line 236, ../sass/screen.scss */
+.div2 {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 241, ../sass/screen.scss */
+.div2 {
+  border: 1px solid black;
+  float: left;
+}
+
+/* line 250, ../sass/screen.scss */
+.chapter-summary:nth-child(1) a {
+  background-color: #ff0000;
+}
+/* line 253, ../sass/screen.scss */
+.chapter-summary:nth-last-child(2) a {
+  background-color: cyan;
+}
+
+/* line 258, ../sass/screen.scss */
+#header ul.nav {
+  float: right;
+}
+/* line 8, ../sass/_mixin.scss */
+#header ul.nav li {
+  float: left;
+  margin-right: 10px;
+}

@@ -1,0 +1,262 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "ie";
+@import "print";
+@import "mixin";
+
+
+
+$main-text-color:red;/*主标题文字颜色*/
+
+$red:#ff0b13;
+$blue:#091fff;
+$green:#11c909;
+
+
+.main-text-color{
+  color: $main-text-color;
+}
+
+.side-text-color{
+  color: $red;
+  .left{
+    color: $blue;
+  }
+  .right{
+    color: $green;
+  }
+}
+
+
+.color-me-bad{
+  color:$green;
+  color: rgba($green,0.9);
+}
+
+.nav{
+  a{
+    color: $red;
+    &:hover{
+      color: $green;
+    }
+    &:visited{
+      color: $blue;
+    }
+    &:link{
+      color: $red;
+    }
+  }
+}
+
+/*
+=================================================
+啊标签定义样式
+=================================================
+*/
+a{
+  color: $color7;
+  &:hover,&:focus{
+    color: $color5;
+  }
+  &:visited,&:active{
+    color: $color7;
+  }
+}
+/*
+=================================================
+nav样式操作
+=================================================
+*/
+
+.chapter-summary{
+  a{
+  display: block;
+  padding: .5em;
+  color: $color10;
+  opacity: .7;
+  border: none;
+  &:hover{
+    opacity: 1;
+  }
+  &:visited{
+    opacity: .9;
+  }
+  b{
+    display: block;
+  }
+  span{
+    display: block;
+    font-size: .8em;
+  }
+  }
+}
+
+
+/*
+=================================================
+父级选择器
+=================================================
+*/
+
+.main{
+  .content{
+    width: 70%;
+  }
+  .content &{
+    width: 100%;
+  }
+
+  .content &{
+    .two &{
+      color: pink;
+    }
+  }
+}
+
+/*
+=================================================
+级联选择器
+=================================================
+*/
+
+.selector-one{
+  &.selector-two{
+    color: green;
+  }
+}
+
+/*
+=================================================
+嵌套命名空间
+=================================================
+*/
+
+.nesting{
+  border: {
+    top:1p dashed $color7;
+    right: 1px dashed $color10;
+    bottom: 1px dashed $color1;
+    left: 1px dashed $color2;
+
+  };
+}
+
+/*
+=================================================
+使用@extend命令扩展现有代码
+=================================================
+*/
+
+.box{
+  padding: 2em;
+  color: $color2;
+  width: 150px;
+  margin: 5px;
+
+}
+.warning-box{
+  @extend .box;
+  border: 2px dotted $color3;
+  background: #ddd;
+}
+.success-box{
+  @extend .box;
+  border: 2px dotted $color5;
+  background: #ccc;
+}
+.info-box{
+  @extend .box;
+  border: 2px solid $color6;
+  background: #666;
+}
+
+
+/*
+=================================================
+使用@extend命令扩展现有代码
+=================================================
+*/
+
+
+.box1{
+  padding: 2em;
+  color: $color2;
+
+}
+.warning-box1{
+  @extend .box1;
+  border: 2px dotted $color3;
+  background: #ddd;
+}
+.success-box1{
+  @extend .box1;
+  border: 2px dotted $color5;
+  background: #ccc;
+}
+.info-box1{
+  @extend .box1;
+  border: 2px solid $color6;
+  background: #666;
+}
+
+/*
+=================================================
+混合宏@mixin生成常用代码
+=================================================
+*/
+*{
+  @include bs(border-box);
+}
+div{
+  @include bs(one-that-works)
+}
+
+
+/*
+=================================================
+第四章  轻松玩转颜色
+=================================================
+*/
+
+.div1{
+  background-color: lighten($color10,93.5%);
+  @extend .box;
+  float: left;
+}
+
+    /*
+    =================================================
+    变浅函数
+    =================================================
+    */
+%clearfix{
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.div2{
+  border:1px solid darken($color5,50%);
+  @extend  %clearfix;
+  @extend .box;
+  float: left;
+}
+
+
+.chapter-summary{
+  &:nth-child(1) a{
+    background-color: $color1;
+  }
+  &:nth-last-child(2) a{
+    background-color: complement($color1);
+  }
+}
+
+#header ul.nav{
+  @include horizontal-list;
+  float: right;
+}
+
